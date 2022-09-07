@@ -8,7 +8,8 @@ import { paginaInicio,
 } from "../controllers/paginasControllers.js";
 
 const router = express.Router();
-router.patch('/');
+// router.patch('/');
+router.patch('/inicio');
 router.get('/',paginaInicio);
 router.get('/producto',paginaProducto);
 router.get('/categoria',paginaCategoria);
