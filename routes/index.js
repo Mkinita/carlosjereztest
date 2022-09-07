@@ -9,7 +9,7 @@ import { paginaInicio,
 
 const router = express.Router();
 
-router.get('/inicio',paginaInicio);
+router.get('/',paginaInicio);
 router.get('/producto',paginaProducto);
 router.get('/categoria',paginaCategoria);
 router.get('/producto/:pro',paginaProductoCategoria);
