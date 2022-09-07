@@ -169,4 +169,7 @@ i {
     margin-top: 1rem;
 }
 
-
+form{
+    justify-content: center;
+    text-align: center;
+}

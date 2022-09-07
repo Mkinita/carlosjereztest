@@ -1,7 +1,16 @@
 extends ./layout/index
 block contenido
+
     h1 
     main.container.mt-5 
-        .row.proximos-viajes
+        .row.proximos-viajes.justify-content-center
             each producto in buscar
                 h2= producto.name 
+                
+                    .col-md-6.col-lg-4.mb-4
+                    .card
+                        img.card-img-top(src=(producto.url_image))
+                            
+                    .card-body
+                            h3 $ #{producto.price}
+                                h3 Descuento #{producto.discount} %

@@ -66,7 +66,7 @@ const buscaProductoNombre = async (req,res) =>{
     const {nombre} = req.body
     const buscar_nombre_producto = req.params.buscar_nombre_producto;
     const buscar = await Producto.findAll({ where: {
-        name
+        name:nombre
       }});
       
       res.render('buscar_producto_nombre',{
